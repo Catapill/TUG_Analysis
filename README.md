@@ -1,5 +1,6 @@
 # TUG_Analysis
-To be ran in Jupyter only tested for Notebook
+* To be ran in Jupyter only tested for Notebook
+* Label training was just a temporary way for me to label the data for the machine learning models. All data sources can be found in the data folder, other csv files have been generated using them.
 ## Dependancies
 ### TUG_Label
 A system for manually labelling TUG data, allows for range of interest to be defined and sections to be labelled.
@@ -38,4 +39,3 @@ A Convolutional Neural Network for automatically segmenting TUG tests.
 * View Gaussian Process Classifier on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_GPC.ipynb?flush_cache=true Model performs at 95.15% average accuracy using 10 test data cuts.
 * View the CNN on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_CNN.ipynb?flush_cache=true Model performs at 96.08% average accuracy.
 * View Synthetic data on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/Synth_data.ipynb
-Label training was just a temporary way for me to label the data for the machine learning models. All data sources can be found in the data folder, other csv files have been generated using them.
