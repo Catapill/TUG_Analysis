@@ -70,3 +70,6 @@ Web Platform for Axivity User Interface
 
 ## Description
 The Axivity web application is a visual tool for the Axivity devices. Upon pushing your data to the data repo, here you will be able to visualise said data.
+
+avaiable at: http://172.31.18.62:8080/axivity
+
