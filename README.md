@@ -59,3 +59,14 @@ Dependencies used
 *	Pgadmin 4 (Management tool for postgreSQL)
 *	Amazon Web Services (AWS) (Used for creating the database and instances server)
 
+# Axivity Web Platform
+
+Web Platform for Axivity User Interface
+
+## Tools Required
+- Intellij/ Eclipse
+- Java JDK 11 or higher
+- pgAdmin4 & postgres
+
+## Description
+The Axivity web application is a visual tool for the Axivity devices. Upon pushing your data to the data repo, here you will be able to visualise said data.
