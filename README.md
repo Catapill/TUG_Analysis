@@ -36,10 +36,10 @@ A Convolutional Neural Network for automatically segmenting TUG tests.
 * Statistics
 * Keras
 ### Viewing Links
-* View Label data on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_Label.ipynb?flush_cache=true
-* View Gaussian Process Classifier on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_GPC.ipynb?flush_cache=true Model performs at 95.15% average accuracy using 10 test data cuts.
-* View the CNN on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_CNN.ipynb?flush_cache=true Model performs at 96.08% average accuracy.
-* View Synthetic data on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/Synth_data.ipynb
+* View Label data on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/aiAnalysis/TUG_Label.ipynb?flush_cache=true
+* View Gaussian Process Classifier on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/aiAnalysis/TUG_GPC.ipynb Model performs at 95.15% average accuracy using 10 test data cuts.
+* View the CNN on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/aiAnalysis/TUG_CNN.ipynb Model performs at 96.08% average accuracy.
+* View Synthetic data on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/aiAnalysis/Synth_data.ipynb
 ## csvDataApi
 * This folder contains files using NodeJS that link to the Amazon RDS (Relational Database Services) via postgreSQL collects the CSV data uploaded and sends the information to an AWS instance which is then displayed through an API in JSON format (link to API  : http://18.191.179.60:3000/getData) this makes it possible to view the data anywhere anytime and can be used to show the data visually, for example we have used jupyter notebook to give a visual representation of the data. There is no installation instruction needed for this as it accessible anywhere and anytime due the data being on a cloud-based server.  
 Files
