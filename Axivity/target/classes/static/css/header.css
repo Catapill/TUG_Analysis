@@ -1,0 +1,124 @@
+.header-black, .header-white, .header-red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 850px) {
+    header svg {
+        max-width: 40px;
+        max-height: 40px;
+        padding: 2px;
+    }
+}
+@media (min-width: 850px) {
+    header svg {
+        max-width: 60px;
+        max-height: 60px;
+        padding: 2px;
+    }
+}
+/*BLACK HEADER*/
+.header-black h1{
+    color: #D1212A;
+}
+.header-black .subtitle1{
+    color: white;
+}
+.header-black h1 svg, .header-black .title1 svg{
+    fill: #D1212A;
+}
+.header-black svg{
+    fill: white;
+}
+/*small screens behind nav*/
+@media (max-width: 850px) {
+    .header-black, .header-white, .header-red{
+        padding: 78px 10px 20px;
+    }
+}
+/*large screens behind nav*/
+@media (min-width: 850px) {
+    .header-black, .header-white, .header-red{
+        padding: 20px 10px;
+    }
+}
+/*small screens*/
+@media (max-width: 850px) {
+    .header-black{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background: black;
+    }
+}
+/*large screens*/
+@media (min-width: 1200px){
+    .header-black{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background: black;
+    }
+}
+/*WHITE HEADER*/
+.header-white h1{
+    color: #D1212A;
+}
+.header-white .subtitle1{
+    color: black;
+}
+.header-white svg{
+    fill: dimgrey;
+}
+/*small screens*/
+@media (max-width: 1200px) {
+    .header-white{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background: white;
+    }
+}
+/*large screens*/
+@media (min-width: 1200px){
+    .header-white{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background: white;
+    }
+}
+/*RED HEADER*/
+.header-red h1{
+    color: white;
+}
+.header-red .subtitle1{
+    color: black;
+}
+.header-red svg{
+    fill: black;
+}
+/*small screens*/
+@media (max-width: 1200px) {
+    .header-red{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background: #D0001B
+    }
+}
+/*large screens*/
+@media (min-width: 1200px){
+    .header-red{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background: #D0001B
+    }
+}
