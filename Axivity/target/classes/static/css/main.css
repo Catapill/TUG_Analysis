@@ -1,0 +1,335 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.iframe{
+    width: 100vw;
+    height: 90vh;
+}
+body{
+    background: black;
+}
+@media (max-width: 850px){
+    main p{
+        padding: 0.25em 0.5em;
+    }
+}
+@media (min-width: 850px){
+    main p{
+        padding: 0.25em 1em;
+    }
+}
+a{
+    text-decoration: none;
+}
+.bold{
+    font-weight: bold;
+}
+@media (max-width: 850px){
+    main li{
+        margin: 0.5em 0.5em 0.5em 2em;
+    }
+}
+@media (min-width: 850px){
+    main li{
+        margin: 0.5em 1em 0.5em 2.25em;
+    }
+}
+.ul-question, .paragraph-title{
+    font-size: 120%;
+    font-weight: bold;
+    padding-top: 1em;
+}
+.ul-answer{
+    margin-left: 0.5em;
+    padding-bottom: 1em;
+}
+ol{
+    list-style: upper-roman;
+}
+ul{
+    list-style: none;
+}
+.main-paragraph{
+    font-size: 115%;
+    margin: 0.5em auto;
+}
+h1, h2, h3, h4, .title1, .title2, .title3, .title4{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+}
+main h1, main h2, main h3, main h4, main .title1, main .title2, main .title3, main .title4{
+    padding: 0.5em 0.25em;
+}
+.subtitle1, .subtitle2, .subtitle3, .subtitle4{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 0;
+}
+@media (min-width: 850px){
+    h1, .title1{
+        font-size: 3em;
+    }
+    h2, .title2{
+        font-size: 2.5em;
+    }
+    h3, .title3{
+        font-size: 2.17em;
+    }
+    h4, .title4{
+        font-size: 2em;
+    }
+    .subtitle1{
+        font-size: 2em;
+    }
+    .subtitle2{
+        font-size: 1.67em;
+    }
+    .subtitle3{
+        font-size: 1.5em;
+    }
+    .subtitle4{
+        font-size: 1.33em;
+    }
+}
+@media (max-width: 850px){
+    h1, .title1{
+        font-size: 2em;
+    }
+    h2, .title2{
+        font-size: 1.5em;
+    }
+    h3, .title3{
+        font-size: 1.17em;
+    }
+    h4, .title4{
+        font-size: 1em;
+    }
+    .subtitle1{
+        font-size: 1.5em;
+    }
+    .subtitle2{
+        font-size: 1.17em;
+    }
+    .subtitle3{
+        font-size: 1em;
+    }
+    .subtitle4{
+        font-size: 0.83em;
+    }
+}
+@media (min-width: 850px){
+    h1 svg, .title1 svg{
+        height: 3em;
+    }
+    h2 svg, .title2 svg{
+        height: 2.5em;
+    }
+    h3 svg, .title3 svg{
+        height: 2.17em;
+    }
+    h4 svg, .title4 svg{
+        height: 2em;
+    }
+    .subtitle1 svg{
+        height: 2em;
+    }
+    .subtitle2 svg{
+        height: 1.67em;
+    }
+    .subtitle3 svg{
+        height: 1.5em;
+    }
+    .subtitle4 svg{
+        height: 1.33em;
+    }
+}
+@media (max-width: 850px){
+    h1 svg, .title1 svg{
+        height: 2em;
+    }
+    h2 svg, .title2 svg{
+        height: 1.5em;
+    }
+    h3 svg, .title3 svg{
+        height: 1.17em;
+    }
+    h4 svg, .title4 svg{
+        height: 1em;
+    }
+    .subtitle1 svg{
+        height: 1.5em;
+    }
+    .subtitle2 svg{
+        height: 1.17em;
+    }
+    .subtitle3 svg{
+        height: 1em;
+    }
+    .subtitle4 svg{
+        height: 0.83em;
+    }
+}
+img {
+    width: 100%;
+    display: block;
+}
+@media (max-width: 850px) {
+    img {
+        padding-top: 0.25em;
+    }
+}
+.container-fluid{
+    width: 100vw;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+/*LARGE SCREENS*/
+@media (min-width: 850px){
+    .row{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    .column{
+        flex : 1 0 0;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .column h1, .column h2, .column h3, .column h4, .column table, .column form{
+        padding: 20px;
+    }
+}
+/*SMALL SCREENS*/
+@media (max-width: 850px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+    .column{
+        max-width: 1200px;
+        display: block;
+    }
+    .column img{
+        min-width: 100vw;
+    }
+}
+/*Black container-fluid*/
+.container-fluid-black{
+    background: #000000;
+}
+.container-fluid-black p, .container-fluid-black span, .container-fluid-black ul, .container-fluid-black li{
+    color: white;
+}
+.container-fluid-black a{
+    color: #D1212A;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.container-fluid-black a:hover{
+    color: #ff0020;
+}
+.container-fluid-black h1, .container-fluid-black h2, .container-fluid-black h3, .container-fluid-black h4, .container-fluid-black .title1, .container-fluid-black .title2, .container-fluid-black .title3, .container-fluid-black .title4, .container-fluid-black .ul-question, .container-fluid-black .paragraph-title{
+    color: #D1212A;
+}
+.container-fluid-black .subtitle1, .container-fluid-black .subtitle2, .container-fluid-black .subtitle3, .container-fluid-black .subtitle4, .container-fluid-black .ul-answer{
+    color: white;
+}
+/*Dark Grey container-fluid*/
+.container-fluid-dgrey{
+    background: #151515;
+}
+.container-fluid-dgrey p, .container-fluid-dgrey span, .container-fluid-dgrey ul, .container-fluid-dgrey ol{
+    color: white;
+}
+.container-fluid-dgrey a{
+    color: #D1212A;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.container-fluid-dgrey a:hover{
+    color: #ff0020;
+}
+.container-fluid-dgrey h1, .container-fluid-dgrey h2, .container-fluid-dgrey h3, .container-fluid-dgrey h4, .container-fluid-dgrey .title1, .container-fluid-dgrey .title2, .container-fluid-dgrey .title3, .container-fluid-dgrey .title4, .container-fluid-dgrey .ul-question, .container-fluid-dgrey .paragraph-title{
+    color: #D1212A;
+}
+.container-fluid-dgrey .subtitle1, .container-fluid-dgrey .subtitle2, .container-fluid-dgrey .subtitle3, .container-fluid-dgrey .subtitle4, .container-fluid-dgrey .ul-answer{
+    color: white;
+}
+/*Light Grey container-fluid*/
+.container-fluid-lgrey{
+    background: #eeeeee;
+}
+.container-fluid-lgrey p, .container-fluid-lgrey span,.container-fluid-lgrey ul, .container-fluid-lgrey ol{
+    color: black;
+}
+.container-fluid-lgrey a{
+    color: #D1212A;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.container-fluid-lgrey a:hover{
+    color: #ff0020;
+}
+.container-fluid-lgrey h1, .container-fluid-lgrey h2, .container-fluid-lgrey h3, .container-fluid-lgrey h4, .container-fluid-lgrey .title1, .container-fluid-lgrey .title2, .container-fluid-lgrey .title3, .container-fluid-lgrey .title4, .container-fluid-lgrey .ul-question, .container-fluid-lgrey .paragraph-title{
+    color: #D1212A;
+}
+.container-fluid-lgrey .subtitle1, .container-fluid-lgrey .subtitle2, .container-fluid-lgrey .subtitle3, .container-fluid-lgrey .subtitle4, .container-fluid-lgrey .ul-answer{
+    color: black;
+}
+/*White container-fluid*/
+.container-fluid-white{
+    background: white;
+}
+.container-fluid-white p, .container-fluid-white span, .container-fluid-white ul, .container-fluid-white ol{
+    color: black;
+}
+.container-fluid-white a{
+    color: #D1212A;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.container-fluid-white a:hover{
+    color: #ff0020;
+}
+.container-fluid-white h1, .container-fluid-white h2, .container-fluid-white h3, .container-fluid-white h4, .container-fluid-white .title1, .container-fluid-white .title2, .container-fluid-white .title3, .container-fluid-white .title4, .container-fluid-white .ul-question, .container-fluid-white .paragraph-title{
+    color: #D1212A;
+}
+.container-fluid-white .subtitle1, .container-fluid-white .subtitle2, .container-fluid-white .subtitle3, .container-fluid-white .subtitle4, .container-fluid-white .ul-answer{
+    color: black;
+}
+/*Red container-fluid*/
+.container-fluid-red{
+    background: #D1212A;
+}
+.container-fluid-red p, .container-fluid-red span, .container-fluid-red ul .container-fluid-red ol{
+    color: white;
+}
+.container-fluid-red a{
+    color: black;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.container-fluid-red a:hover{
+    color: #333333;
+}
+.container-fluid-red h1, .container-fluid-red h2, .container-fluid-red h3, .container-fluid-red h4, .container-fluid-red .title1, .container-fluid-red .title2, .container-fluid-red .title3, .container-fluid-red .title4, .container-fluid-red .ul-question, .container-fluid-red .paragraph-title{
+    color: black;
+}
+.container-fluid-red .subtitle1, .container-fluid-red .subtitle2, .container-fluid-red .subtitle3, .container-fluid-red .subtitle4, .container-fluid-red .ul-answer{
+    color: white;
+}
