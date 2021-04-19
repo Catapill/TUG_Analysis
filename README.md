@@ -59,17 +59,24 @@ Dependencies used
 *	Pgadmin 4 (Management tool for postgreSQL)
 *	Amazon Web Services (AWS) (Used for creating the database and instances server)
 
-# Axivity Web Platform
+## Axivity Web Platform
 
 Web Platform for Axivity User Interface
 
-## Tools Required
+### Tools Required
 - Intellij/ Eclipse
 - Java JDK 11 or higher
 - pgAdmin4 & postgres
 
-## Description
+### Description
 The Axivity web application is a visual tool for the Axivity devices. Upon pushing your data to the data repo, here you will be able to visualise said data.
 
 avaiable at: http://172.31.18.62:8080/axivity
 
+## Node.j_server
+It is to start a server to let the cwa-file-uploader POST to the database
+ 
+## cwa-file-uploader
+For it to work Node.js_server has to be launched
+It is still not implemented into general app but when it is launched it starts a page with a chose_file button
+It only accepts .cwa files after which, POST request is instantly sent to the server and then to database where the file is stored
