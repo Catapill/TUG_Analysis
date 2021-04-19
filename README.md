@@ -56,4 +56,5 @@ Dependencies used
 *	Putty (AWS Cloud Server connection used to install various packages on the server)
 *	Filezilla(Cloud based File server connection, used for uploading files to sever)
 *	Pgadmin 4 (Management tool for postgreSQL)
+*	Amazon Web Services (AWS) (Used for creating the database and instances server)
 
