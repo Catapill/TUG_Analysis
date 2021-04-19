@@ -1,0 +1,1 @@
+Start before starting cwa-file-loader to start a server and make connection to db possible
