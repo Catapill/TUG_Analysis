@@ -1,8 +1,9 @@
 # TUG_Analysis
+## aiAnalysis
 * To be ran in Jupyter only tested for Notebook
 * Label training was just a temporary way for me to label the data for the machine learning models. All data sources can be found in the data folder, other csv files have been generated using them.
-## Dependancies
-### TUG_Label
+### Dependancies
+#### TUG_Label
 A system for manually labelling TUG data, allows for range of interest to be defined and sections to be labelled.
 * Numpy
 * Pandas
@@ -10,14 +11,14 @@ A system for manually labelling TUG data, allows for range of interest to be def
 * Matplotlib
 * Requests
 * Json
-### Synth_data
+#### Synth_data
 A system that takes the training data and creates four noise altered data sets.
 * Numpy
 * Pandas
 * Matplotlib
 * Operator
 * CSV
-### TUG_GPC
+#### TUG_GPC
 A Gaussian Process Model for automatically segmenting TUG tests.
 * Numpy
 * Pandas
@@ -25,7 +26,7 @@ A Gaussian Process Model for automatically segmenting TUG tests.
 * Plotly
 * Sklearn
 * Statistics
-### TUG_CNN
+#### TUG_CNN
 A Convolutional Neural Network for automatically segmenting TUG tests.
 * Numpy
 * Pandas
@@ -34,7 +35,7 @@ A Convolutional Neural Network for automatically segmenting TUG tests.
 * Sklearn
 * Statistics
 * Keras
-## Viewing Links
+### Viewing Links
 * View Label data on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_Label.ipynb?flush_cache=true
 * View Gaussian Process Classifier on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_GPC.ipynb?flush_cache=true Model performs at 95.15% average accuracy using 10 test data cuts.
 * View the CNN on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_CNN.ipynb?flush_cache=true Model performs at 96.08% average accuracy.
