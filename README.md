@@ -39,3 +39,21 @@ A Convolutional Neural Network for automatically segmenting TUG tests.
 * View Gaussian Process Classifier on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_GPC.ipynb?flush_cache=true Model performs at 95.15% average accuracy using 10 test data cuts.
 * View the CNN on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/TUG_CNN.ipynb?flush_cache=true Model performs at 96.08% average accuracy.
 * View Synthetic data on https://nbviewer.jupyter.org/github/Catapill/TUG_Analysis/blob/main/Synth_data.ipynb
+## csvDataApi
+This folder contains files using NodeJS that link to the Amazon RDS (Relational Database Services) via postgreSQL collects the CSV data uploaded and sends the information to an AWS instance which is then displayed through an API in JSON format (link to API  : http://18.191.179.60:3000/getData) this makes it possible to view the data anywhere anytime and can be used to show the data visually, for example we have used jupyter notebook to give a visual representation of the data. There is no installation instruction needed for this as it accessible anywhere and anytime due the data being on a cloud-based server.  
+Files
+•	db.JS – This file connects to the PostgreSQL and gathers the data for the API
+ 
+•	Package.JSON - This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.
+
+•	Package-lock.JSON - This is automatically generated for any operations where npm modifies either the node_modules tree. 
+
+•	Node_modules – This is file stores all of the Node JS packages. 
+
+Dependencies used
+•	NodeJS (Create API)
+•	PostgreSQL (Amazon Relational Database service connection, used )
+•	Putty (AWS Cloud Server connection used to install various packages on the server)
+•	Filezilla(Cloud based File server connection, used for uploading files to sever)
+•	Pgadmin 4 (Management tool for postgreSQL)
+
