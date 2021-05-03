@@ -89,10 +89,11 @@ The Axivity web application is a visual tool for the Axivity devices. Upon pushi
 avaiable at: http://172.31.18.62:8080/axivity
 
 ## Node.j_server
-It is a server responsible for posting files into the database. It has to be separate from the user interface because packages that are used for connection must use Node.js runtime. I attempted to use connection packages with Angular or React but in both instances I had issues with application build process.
+It is a server responsible for posting files into the database. It has to be separate from the user interface because packages that are used for connection must use Node.js runtime. I attempted to use connection packages with Angular or React but in both instances I had issues with application build process. As it has to be running separately the setup is written in the Node.js_server folder README.md file.
 
 ## cwa-file-uploader
 For it to work Node.js_server has to be running
 
 It is still not implemented into general app but when it is launched it starts a page with a chose_file button
 It only accepts .cwa files after which, POST request is instantly sent to the server and then to database where the file is stored.
+As it is not yet implemented the setup is written in the cwa-file-uploader README.md file.
