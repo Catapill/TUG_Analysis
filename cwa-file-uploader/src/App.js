@@ -18,7 +18,7 @@ class App extends React.Component {
         'Content-Type': 'multipart/form-data'
       }
     }).then(function(){
-      alert("done")
+      alert("Done")
     });
   }
   
