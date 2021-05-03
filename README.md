@@ -1,4 +1,19 @@
 # TUG_Analysis
+
+- [TUG_Analysis](#tug_analysis)
+  - [aiAnalysis](#aianalysis)
+    - [Dependancies](#dependancies)
+      - [TUG_Label](#tug_label)
+      - [Synth_data](#synth_data)
+      - [TUG_GPC](#tug_gpc)
+      - [TUG_CNN](#tug_cnn)
+    - [Viewing Links](#viewing-links)
+  - [csvDataApi](#csvdataapi)
+  - [Axivity Web Platform](#axivity-web-platform)
+    - [Tools Required](#tools-required)
+    - [Description](#description)
+  - [Node.j_server](#nodej_server)
+  - [cwa-file-uploader](#cwa-file-uploader)
 ## aiAnalysis
 * To be ran in Jupyter only tested for Notebook
 * Label training was just a temporary way for me to label the data for the machine learning models. All data sources can be found in the data folder, other csv files have been generated using them.
@@ -74,8 +89,10 @@ The Axivity web application is a visual tool for the Axivity devices. Upon pushi
 avaiable at: http://172.31.18.62:8080/axivity
 
 ## Node.j_server
-It is to start a server to let the cwa-file-uploader POST to the database
+It is a server responsible for posting files into the database. It has to be separate from the user interface because packages that are used for connection must use Node.js runtime. I attempted to use connection packages with Angular or React but in both instances I had issues with application build process.
+
 ## cwa-file-uploader
-For it to work Node.js_server has to be launched
+For it to work Node.js_server has to be running
+
 It is still not implemented into general app but when it is launched it starts a page with a chose_file button
-It only accepts .cwa files after which, POST request is instantly sent to the server and then to database where the file is stored
+It only accepts .cwa files after which, POST request is instantly sent to the server and then to database where the file is stored.

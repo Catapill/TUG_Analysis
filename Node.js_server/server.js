@@ -13,6 +13,7 @@ const db = require('./app/config/db.config.js');
 db.sequelize.authenticate().then(function() {console.log("~connected~")});
 
 //force: true will drop the table if it already exists
+//alter: true will alter the table if it already exists
 db.files.sync({alter: true}).then(() => {
   console.log('sync executed');
 }); 
